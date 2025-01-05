@@ -34,7 +34,7 @@ function News(props) {
             }
         }
         getNews()
-    }, [props.country, props.category, props.source])
+    }, [props.country, props.category, props.source, props.query])
 
     const newsHTML = news.map(article => <Card article={article}></Card>);
 
